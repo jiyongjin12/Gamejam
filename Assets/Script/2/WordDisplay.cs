@@ -8,11 +8,32 @@ public class WordDisplay : MonoBehaviour
 {
     public TMP_Text text;
     public float fallSpeed = 1f;
+
+    [SerializeField]PlayerHp pHP;
+
+    public int damage = 10;
     
     private string word;
+
+    private void Start()
+    {
+        Invoke("DestroyText", 11);
+    }
+
     public void Setword(string word)
     {
         text.text = word;
+    }
+
+    void DestroyText()
+    {
+        Debug.Log("111");
+        if (pHP != null)
+        {
+            Debug.Log("11");
+            pHP.TakeDamage(damage);
+        }
+        Destroy(gameObject);
     }
 
     public void RemoveLetter()

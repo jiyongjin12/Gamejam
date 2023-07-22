@@ -1392,7 +1392,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 064433c71e0a72440b32e82bbbf84947, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextSceneName: Stage2
+  nextSceneName: Hold2
 --- !u!114 &864276727
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3010,7 +3010,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 064433c71e0a72440b32e82bbbf84947, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextSceneName: Stage4
+  nextSceneName: Hold4
 --- !u!114 &1802648390
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3236,7 +3236,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 064433c71e0a72440b32e82bbbf84947, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextSceneName: Stage1
+  nextSceneName: Hold1
 --- !u!114 &1886726806
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3731,7 +3731,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 064433c71e0a72440b32e82bbbf84947, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextSceneName: Stage3
+  nextSceneName: Hold3
 --- !u!114 &2016909776
 MonoBehaviour:
   m_ObjectHideFlags: 0

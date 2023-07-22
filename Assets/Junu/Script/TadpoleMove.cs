@@ -23,18 +23,31 @@ public class TadpoleMove : MonoBehaviour
 
     void Update()
     {
-        if(Input.anyKeyDown)
+        if (level > 3) 
         {
-            if(isSprite)
+            if (Input.anyKeyDown)
             {
-                sr.sprite = tadPole_Row_Sprite[1];
-                isSprite = false;
-            }
-            else if(!isSprite)
-            {
-                sr.sprite = tadPole_Row_Sprite[0];
-                isSprite = true;
+                if (isSprite)
+                {
+                    sr.sprite = tadPole_Row_Sprite[1];
+                    isSprite = false;
+                }
+                else if (!isSprite)
+                {
+                    sr.sprite = tadPole_Row_Sprite[0];
+                    isSprite = true;
+                }
             }
         }
+        else if (level > 7)
+        {
+            //뒷다리
+        }
+        else
+        {
+            //앞다리
+        }
+
+        
     }
 }
