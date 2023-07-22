@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 [System.Serializable]
@@ -39,6 +40,11 @@ public class Word
             display.RemoveWord();
         }
         return wordTyped;
+    }
+
+    public WordDisplay GetDisplay()
+    {
+        return display;
     }
 
 }
