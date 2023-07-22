@@ -2645,7 +2645,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 9.4345, y: -13.910001}
+  m_AnchoredPosition: {x: 9.4345, y: -12.8}
   m_SizeDelta: {x: 19.243, y: 8.377}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &860478808
@@ -2836,7 +2836,7 @@ MonoBehaviour:
   tadPole_High_Sprite:
   - {fileID: 21300000, guid: 1ff8400dcff0d9a43a70401d8247f151, type: 3}
   - {fileID: 21300000, guid: df09b901cafde214782b139c6bd2d68c, type: 3}
-  level: 1
+  lv: {fileID: 0}
   isSprite: 1
 --- !u!224 &883176032 stripped
 RectTransform:
@@ -3001,7 +3001,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -10.506999, y: -13.91}
+  m_AnchoredPosition: {x: -10.506999, y: -12.8}
   m_SizeDelta: {x: 12.933, y: 7.497}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &991031373
@@ -4571,6 +4571,7 @@ MonoBehaviour:
   popSound: {fileID: 8300000, guid: b3f22a8c252eecd43b27ba1d1e19feb3, type: 3}
   effect: {fileID: 1921864508}
   stageInt: 1
+  count: {fileID: 0}
   level: {fileID: 665445040}
   ExpNum: 5
 --- !u!4 &1464089465
@@ -5018,7 +5019,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1544209650
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5038,8 +5039,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.18700027, y: -19.384}
-  m_SizeDelta: {x: -11.139, y: -40.769}
+  m_AnchoredPosition: {x: 0.18700027, y: -17.2}
+  m_SizeDelta: {x: -11.139, y: -43.696}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1544209651
 MonoBehaviour:
