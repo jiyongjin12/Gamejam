@@ -12,18 +12,20 @@ public class TadpoleMove : MonoBehaviour
     SpriteRenderer sr;
 
     [SerializeField]
-    int level = 1;
+    //int level = 1;
+    public Level lv;
 
     public bool isSprite = true;
 
     private void Start()
     {
         sr = GetComponent<SpriteRenderer>();
+        
     }
 
     void Update()
     {
-        if (level <= 3) 
+        if (lv.level <= 6) 
         {
             if (Input.anyKeyDown)
             {
@@ -39,13 +41,15 @@ public class TadpoleMove : MonoBehaviour
                 }
             }
         }
-        else if (level > 7)
+        else if (lv.level > 20)
         {
-            //뒷다리
+            Debug.Log("앞다리");
+            //앞다리
         }
         else
         {
-            //앞다리
+            Debug.Log("뒷다리");
+            //뒷다리
         }
 
         

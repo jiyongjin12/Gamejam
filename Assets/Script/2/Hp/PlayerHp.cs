@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class PlayerHp : MonoBehaviour
 {
-    public int maxHp = 100;
-    public int currentHp;
+    public float maxHp = 100;
+    public float currentHp;
 
     private void Start()
     {
