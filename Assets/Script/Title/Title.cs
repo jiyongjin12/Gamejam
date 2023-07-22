@@ -7,6 +7,6 @@ public class Title : MonoBehaviour
 {
     public void GameStart()
     {
-        SceneManager.LoadScene("Sample2");
+        SceneManager.LoadScene("Stage");
     }
 }

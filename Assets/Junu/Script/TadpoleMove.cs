@@ -23,7 +23,7 @@ public class TadpoleMove : MonoBehaviour
 
     void Update()
     {
-        if (level > 3) 
+        if (level <= 3) 
         {
             if (Input.anyKeyDown)
             {
