@@ -27,6 +27,8 @@ public class WordManger : MonoBehaviour
     public int stageInt = 1;
 
     private bool isFade;
+    
+    public Count count;
 
 
     public Level level;
@@ -114,6 +116,8 @@ public class WordManger : MonoBehaviour
 
                 float gainedExperience = ExpNum;
                 level.SetExperience(gainedExperience);
+
+                count.UpCount();
             }
         }
 
