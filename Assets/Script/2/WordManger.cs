@@ -66,11 +66,23 @@ public class WordManger : MonoBehaviour
     // 입력을 받을 TMP_InputField
     public TMP_InputField inputField;
 
+    public AudioClip popSound;
+    AudioSource aS;
+    SpriteRenderer effect_sr;
+    Coroutine fadeOutCoroutine;
+
     private bool hasActiveWord;
     private Word activeWord;
 
+    public GameObject effect;
+
+    private bool isFade;
+
     private void Start()
     {
+        aS = GetComponent<AudioSource>();
+        effect_sr = effect.GetComponent<SpriteRenderer>();
+
         // 시작 시 3개의 단어를 추가합니다.
         AddWord();
         AddWord();
@@ -78,6 +90,7 @@ public class WordManger : MonoBehaviour
 
         // InputField의 OnEndEdit 이벤트에 WordCheck 함수를 연결합니다.
         inputField.onEndEdit.AddListener(WordCheck);
+        effect.SetActive(false);
     }
 
     private void Update()
@@ -125,6 +138,7 @@ public class WordManger : MonoBehaviour
         if (hasActiveWord && activeWord.WordTyped())
         {
             hasActiveWord = false;
+            
             words.Remove(activeWord);
         }
     }
@@ -139,6 +153,10 @@ public class WordManger : MonoBehaviour
             if (word.word == inputText)
             {
                 wordsToRemove.Add(word);
+                if (fadeOutCoroutine != null)
+                    StopCoroutine(fadeOutCoroutine);
+                fadeOutCoroutine = StartCoroutine(FadeOut());
+                aS.PlayOneShot(popSound); Debug.Log("PlaySound");
             }
         }
 
@@ -150,5 +168,21 @@ public class WordManger : MonoBehaviour
         }
 
         inputField.text = ""; // InputField의 내용을 비웁니다.
+    }
+
+    IEnumerator FadeOut()
+    {
+        isFade = true;
+        effect.SetActive(true);
+        float fadeCount = 1;
+        while (fadeCount > 0)
+        {
+            fadeCount -= 0.01f;
+            yield return new WaitForSeconds(0.01f);
+            effect_sr.color = new Color(255/255f, 255/255f, 200/255f, fadeCount);
+            isFade = false;
+        }
+        yield return null;
+        isFade = false;
     }
 }
