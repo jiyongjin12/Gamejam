@@ -3972,6 +3972,7 @@ MonoBehaviour:
   inputField: {fileID: 291510223}
   popSound: {fileID: 8300000, guid: b3f22a8c252eecd43b27ba1d1e19feb3, type: 3}
   effect: {fileID: 1921864508}
+  stageInt: 4
 --- !u!4 &1464089465
 Transform:
   m_ObjectHideFlags: 0

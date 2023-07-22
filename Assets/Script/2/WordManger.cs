@@ -24,6 +24,8 @@ public class WordManger : MonoBehaviour
 
     public GameObject effect;
 
+    public int stageInt = 1;
+
     private bool isFade;
 
 
@@ -54,7 +56,7 @@ public class WordManger : MonoBehaviour
     public void AddWord()
     {
         // 랜덤 단어를 생성하여 Word 객체를 생성하고, WordSpawner를 이용하여 화면에 단어를 생성합니다.
-        Word word = new Word(WordGenerator.GetRandomWord(), wordSpawner.SpawnWord());
+        Word word = new Word(WordGenerator.GetRandomWord(stageInt), wordSpawner.SpawnWord());
         Debug.Log(word.word);
 
         words.Add(word); // 생성된 단어를 리스트에 추가합니다.
