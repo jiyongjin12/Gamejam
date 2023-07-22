@@ -18,7 +18,6 @@ public class WordDisplay : MonoBehaviour
 
     public void RemoveLetter()
     {
-        //text.text = text.text.Remove(0, 1);
     }
 
     public void RemoveWord()
@@ -28,7 +27,6 @@ public class WordDisplay : MonoBehaviour
 
     private void Update()
     {
-        //transform.Translate(0f, -fallSpeed * Time.deltaTime, 0f);
         transform.Translate(-fallSpeed * Time.deltaTime, 0f, 0f);
     }
 

@@ -70,7 +70,7 @@ MonoBehaviour:
   m_text: "\uD14C\uC2A4\uD2B8"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
-  m_sharedMaterial: {fileID: 5009257228343023460, guid: 77bf1a91e5d012042b7d51c6b5e6a60d, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -150,3 +150,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 4820503932557701002}
   fallSpeed: 1
+  WaitingTime: 0.1
