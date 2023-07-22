@@ -10,7 +10,6 @@ public class WordDisplay : MonoBehaviour
     public float fallSpeed = 1f;
     
     private string word;
-
     public void Setword(string word)
     {
         text.text = word;
