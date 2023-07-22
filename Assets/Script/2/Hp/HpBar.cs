@@ -15,6 +15,6 @@ public class HpBar : MonoBehaviour
 
     void Update()
     {
-        healthSlider.fillAmount = player.currentHp / player.maxHp;
+        healthSlider.fillAmount = player.currentHp / 1000;
     }
 }

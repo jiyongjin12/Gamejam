@@ -41,4 +41,9 @@ public class Word
         return wordTyped;
     }
 
+    public WordDisplay GetDisplay()
+    {
+        return display;
+    }
+
 }

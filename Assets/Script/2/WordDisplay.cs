@@ -17,6 +17,7 @@ public class WordDisplay : MonoBehaviour
 
     private void Start()
     {
+        pHP = Can.Instance.hp;
         Invoke("DestroyText", 11);
     }
 
@@ -27,10 +28,8 @@ public class WordDisplay : MonoBehaviour
 
     void DestroyText()
     {
-        Debug.Log("111");
         if (pHP != null)
         {
-            Debug.Log("11");
             pHP.TakeDamage(damage);
         }
         Destroy(gameObject);

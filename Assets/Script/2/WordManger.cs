@@ -6,58 +6,6 @@ using UnityEngine.UI;
 
 public class WordManger : MonoBehaviour
 {
-    //public List<Word> words;
-
-    //public WordSpawner wordSpawner;
-
-    //private bool hasActiveWord;
-    //private Word activeWord;
-
-    //private void Start()
-    //{
-    //    AddWord();
-    //    AddWord();
-    //    AddWord();
-    //}
-
-    //public void AddWord()
-    //{
-    //    Word word = new Word(WordGenerator.GetRandomWord(), wordSpawner.SpawnWord());
-    //    Debug.Log(word.word);
-
-    //    words.Add(word);
-    //}
-
-    //public void TypeLetter(char letter)
-    //{
-    //    if (hasActiveWord)
-    //    {
-    //        if (activeWord.GetNextLetter() == letter)
-    //        {
-    //            activeWord.TypeLetter();
-    //        }
-    //    }
-    //    else
-    //    {
-    //        foreach (Word word in words)
-    //        {
-    //            if (word.GetNextLetter() == letter)
-    //            {
-    //                activeWord = word;
-    //                hasActiveWord = true;
-    //                word.TypeLetter();
-    //                break;
-    //            }
-    //        }
-    //    }
-
-    //    if (hasActiveWord && activeWord.WordTyped())
-    //    {
-    //        hasActiveWord = false;
-    //        words.Remove(activeWord);
-    //    }
-    //}
-
     public List<Word> words;
 
     // WordSpawner 스크립트를 참조할 변수
@@ -77,6 +25,10 @@ public class WordManger : MonoBehaviour
     public GameObject effect;
 
     private bool isFade;
+
+
+    public Level level;
+    public float ExpNum;
 
     private void Start()
     {
@@ -157,6 +109,9 @@ public class WordManger : MonoBehaviour
                     StopCoroutine(fadeOutCoroutine);
                 fadeOutCoroutine = StartCoroutine(FadeOut());
                 aS.PlayOneShot(popSound); Debug.Log("PlaySound");
+
+                float gainedExperience = ExpNum;
+                level.SetExperience(gainedExperience);
             }
         }
 
