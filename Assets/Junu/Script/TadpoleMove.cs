@@ -43,13 +43,35 @@ public class TadpoleMove : MonoBehaviour
         }
         else if (lv.level > 20)
         {
-            Debug.Log("앞다리");
-            //앞다리
+            if (Input.anyKeyDown)
+            {
+                if (isSprite)
+                {
+                    sr.sprite = tadPole_High_Sprite[1];
+                    isSprite = false;
+                }
+                else if (!isSprite)
+                {
+                    sr.sprite = tadPole_High_Sprite[0];
+                    isSprite = true;
+                }
+            }
         }
         else
         {
-            Debug.Log("뒷다리");
-            //뒷다리
+            if (Input.anyKeyDown)
+            {
+                if (isSprite)
+                {
+                    sr.sprite = tadPole_Mid_Sprite[1];
+                    isSprite = false;
+                }
+                else if (!isSprite)
+                {
+                    sr.sprite = tadPole_Mid_Sprite[0];
+                    isSprite = true;
+                }
+            }
         }
 
         
