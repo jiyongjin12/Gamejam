@@ -23,6 +23,11 @@ public class WordSpawner : MonoBehaviour
 
     public void RemoveWord(Word word)
     {
-        Destroy(word.display.gameObject);
+        //Destroy(word.display.gameObject);
+
+        if (word.display != null)
+        {
+            Destroy(word.display.gameObject);
+        }
     }
 }
