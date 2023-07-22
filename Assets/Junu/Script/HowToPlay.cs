@@ -9,9 +9,14 @@ public class HowToPlay : MonoBehaviour
     public Image info;
     public Sprite[] page;
     public int currentPage;
+    public AudioClip button_push;
+
+    AudioSource aS;
 
     void Start()
     {
+        aS = GetComponent<AudioSource>();    
+
         currentPage = 0;
         HowToPlayPanel.SetActive(false);
     }
@@ -19,6 +24,7 @@ public class HowToPlay : MonoBehaviour
 
     public void NextPage()
     {
+        aS.PlayOneShot(button_push);
         currentPage++;
 
         if(currentPage == 1)

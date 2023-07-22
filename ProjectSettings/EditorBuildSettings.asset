@@ -13,29 +13,26 @@ EditorBuildSettings:
     guid: d45499def9b2fe14a8cc8461f7e064e9
   - enabled: 1
     path: Assets/Scenes/Hold On/Hold1.unity
-    guid: 81d612e37f15f1240a3022ac668c86ee
+    guid: bc539b28716d57743ba5feee54d34256
   - enabled: 1
     path: Assets/Scenes/Hold On/Hold2.unity
-    guid: 6caf1240d5444834f83c6a69fe4028cc
+    guid: c90343826f4d16b47a699ddaf1483304
   - enabled: 1
     path: Assets/Scenes/Hold On/Hold3.unity
-    guid: 3d50251d5a37a0a4f9f76934abc0a514
+    guid: 0f4cc2bbbd2935740805d2ae3dd23f59
   - enabled: 1
     path: Assets/Scenes/Hold On/Hold4.unity
-    guid: 7076496d386d62d47841aed489df1bb7
+    guid: c48d417c6f53c1a41b87704fcb00883b
   - enabled: 1
     path: Assets/Scenes/grow up/Grow1.unity
-    guid: a26e23a3008e49348b26b713c612a0c3
+    guid: d59d3dc4c7c516a479f375f1fa784f53
   - enabled: 1
     path: Assets/Scenes/grow up/Grow2.unity
-    guid: 69e5fb1733d66e749928a6f21515c95e
+    guid: 330c20fc59f5d7d4c8e93b46c920ef8e
   - enabled: 1
     path: Assets/Scenes/grow up/Grow3.unity
-    guid: 37c325ff79e83554dbe7a8e6851d2b41
+    guid: 24a6c08e3d4df184088147b512844a98
   - enabled: 1
     path: Assets/Scenes/grow up/Grow4.unity
-    guid: 85a30d80a02886f4b94f2d37e4cf9430
-  - enabled: 1
-    path: Assets/Scenes/Sample2.unity
-    guid: eba47fb58f6be6e4d93a38e04d350127
+    guid: d32ce5e52ef4a1e4a96c393a33d27dae
   m_configObjects: {}
