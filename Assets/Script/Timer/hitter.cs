@@ -16,7 +16,7 @@ public class hitter : MonoBehaviour
         if (time.currentValue > 0f)
         {
             float typingSpeed = (float)(count.Nomal / 5) / (time.currentValue / 60f);
-            typingSpeedImage.fillAmount = typingSpeed;
+            typingSpeedImage.fillAmount = typingSpeed / 50;
         }
         else
         {
