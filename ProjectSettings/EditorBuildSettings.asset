@@ -35,4 +35,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/grow up/Grow4.unity
     guid: d32ce5e52ef4a1e4a96c393a33d27dae
+  - enabled: 1
+    path: Assets/Scenes/End/End.unity
+    guid: c00b2fbc6addad54bace7218d862d70b
   m_configObjects: {}

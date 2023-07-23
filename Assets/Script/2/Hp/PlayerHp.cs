@@ -26,7 +26,7 @@ public class PlayerHp : MonoBehaviour
 
     private void Die()
     {
-        //다음씬
         Debug.Log("아 우리 애들 보고 싶다");
+        SceneManager.LoadScene("Title");
     }
 }

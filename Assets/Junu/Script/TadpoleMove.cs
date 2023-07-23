@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class TadpoleMove : MonoBehaviour
 {
@@ -16,6 +17,8 @@ public class TadpoleMove : MonoBehaviour
     public Level lv;
 
     public bool isSprite = true;
+
+    //public string Nextscen;
 
     private void Start()
     {
@@ -43,19 +46,7 @@ public class TadpoleMove : MonoBehaviour
         }
         else if (lv.level > 20)
         {
-            if (Input.anyKeyDown)
-            {
-                if (isSprite)
-                {
-                    sr.sprite = tadPole_High_Sprite[1];
-                    isSprite = false;
-                }
-                else if (!isSprite)
-                {
-                    sr.sprite = tadPole_High_Sprite[0];
-                    isSprite = true;
-                }
-            }
+            SceneManager.LoadScene("Title");
         }
         else
         {

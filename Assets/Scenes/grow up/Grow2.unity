@@ -2949,7 +2949,7 @@ MonoBehaviour:
   tadPole_High_Sprite:
   - {fileID: 21300000, guid: 1ff8400dcff0d9a43a70401d8247f151, type: 3}
   - {fileID: 21300000, guid: df09b901cafde214782b139c6bd2d68c, type: 3}
-  lv: {fileID: 0}
+  lv: {fileID: 665445040}
   isSprite: 1
 --- !u!224 &883176032 stripped
 RectTransform:
